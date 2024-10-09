@@ -33,7 +33,9 @@ void OnTick() {
         TPJSON json;
 
         // Build your properties according to the webhook documentation: https://docs.traderspost.io/docs/core-concepts/webhooks#request-body
-        json["ticker"] = "MSFT";
+
+        // The ticker is hard-coded here because StoneX futures tickers do not match TradersPost futures tickers.
+        json["ticker"] = "NQZ2024";
         json["action"] = "buy";
         json["quantity"] = 1;
 
@@ -48,7 +50,7 @@ void OnTick() {
         bool result = webhookRequest.SendRequest(jsonPayload);
 
         if (result) {
-            Print("Buy order sent for MSFT.");
+            Print("Buy order sent for NQZ2024.");
             orderSent = true;  // Only send once
         } else {
             Print("Failed to send the buy order.");

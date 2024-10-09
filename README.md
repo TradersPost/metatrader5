@@ -66,7 +66,7 @@ void OnTick() {
 
 An example Expert Advisor (EA) has been created to demonstrate how to build and send a webhook request using the TradersPostWebhookRequest library. You can find this example EA in the file [MQL5/Experts/Advisors/TradersPostExample.mq5](MQL5/Experts/Advisors/TradersPostExample.mq5).
 
-It's important to note that this EA is not a functioning trading strategy. Instead, it serves as an illustrative example of how to construct and send a webhook request within the OnTick() method. The EA sends a single buy order for Microsoft (MSFT) stock with a specified quantity, take profit, and stop loss.
+It's important to note that this EA is not a functioning trading strategy. Instead, it serves as an illustrative example of how to construct and send a webhook request within the OnTick() method. The EA sends a single buy order for NQ Nasdaq 100 Futures (NQZ2024) with a specified quantity, take profit, and stop loss.
 
 When developing your own EA, we strongly encourage you to refer to the webhook documentation available at https://docs.traderspost.io/docs/core-concepts/webhooks#request-body. This documentation provides detailed information on how to construct the message payload according to your specific trading needs. You can customize the properties in the JSON object to match your desired trading actions, whether it's buying, selling, or managing existing positions.
 
